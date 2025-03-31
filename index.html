@@ -5,38 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lens of Delhi - Photography Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #000; color: #fff; padding: 20px; font-size: 24px; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
-        .gallery img { width: 30%; margin: 10px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); }
-        .socials { margin: 20px 0; }
-        .socials a { display: inline-block; margin: 10px; text-decoration: none; font-size: 18px; color: #000; background: #fff; padding: 10px 15px; border-radius: 5px; box-shadow: 1px 1px 5px rgba(0,0,0,0.2); }
-        .socials a:hover { background: #ddd; }
-        footer { background: #000; color: #fff; padding: 10px; margin-top: 20px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #000; color: #fff; padding: 40px; font-size: 28px; }
+        .hero { position: relative; text-align: center; color: white; }
+        .hero img { width: 100%; height: auto; }
+        .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 28px; background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; }
+        .section { padding: 40px; }
+        .gallery img, .services img { width: 90%; max-width: 400px; border-radius: 10px; margin-top: 10px; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .service-item { width: 30%; min-width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        footer { background: #000; color: #fff; padding: 20px; margin-top: 20px; }
+        .socials a { margin: 10px; text-decoration: none; font-size: 18px; color: #000; }
+        @media (max-width: 768px) { .service-item { width: 90%; } }
     </style>
 </head>
 <body>
+
+    <!-- Hero Section with Banner -->
     <header>
-    <img src="banner.jpg" alt="Lens of Delhi Banner" style="width: 100%; max-height: 300px; object-fit: cover;">
-    <h1>Lens of Delhi</h1>
-    <p>Capturing Moments, Creating Memories</p>
+        <img src="banner.jpg" alt="Lens of Delhi Banner" style="width: 100%; max-height: 300px; object-fit: cover;">
+        <h1>Lens of Delhi</h1>
+        <p>Capturing Moments, Creating Memories</p>
     </header>
-    
-    <section class="gallery">
-        <h2>Photo Gallery</h2>
-        <img src="photo1.jpg" alt="Sample Photo>
+    <section class="hero">
+        <img src="your-banner-image.jpg" alt="Banner Image">
+        <div class="hero-text">
+            <h2>Delhi Through My Lens</h2>
+            <p>Professional Photography | Candid Moments | Visual Storytelling</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a passionate photographer based in Delhi. Specializing in portrait, travel, and event photography, I love capturing emotions and moments that tell a story.</p>
+    </section>
+
+    <!-- Services Section with Photos -->
+    <section class="section services" id="services">
+        <h2>My Photography Services</h2>
+
+        <div class="service-item">
+            <h3>📷 Portrait Photography</h3>
+            <img src="portrait-sample.jpg" alt="Portrait Photography">
+            <p>Professional headshots and personal portraits with artistic lighting and creative framing.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>🎉 Event Photography</h3>
+            <img src="event-sample.jpg" alt="Event Photography">
+            <p>Capturing weddings, birthdays, and special events with a candid approach.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>🌍 Travel Photography</h3>
+            <img src="travel-sample.jpg" alt="Travel Photography">
+            <p>Exploring Delhi and beyond, capturing the essence of places and cultures.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>👗 Fashion Photography</h3>
+            <img src="fashion-sample.jpg" alt="Fashion Photography">
+            <p>Stylized photoshoots for models, designers, and brands.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>🍽️ Food Photography</h3>
+            <img src="food-sample.jpg" alt="Food Photography">
+            <p>Mouth-watering images of dishes, perfect for restaurants and food bloggers.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>🏢 Architectural Photography</h3>
+            <img src="architecture-sample.jpg" alt="Architectural Photography">
+            <p>Capturing the beauty of buildings and structures with perspective and detail.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section gallery" id="portfolio">
+        <h2>Portfolio</h2>
+        <img src="photo1.jpg" alt="Sample Photo">
         <img src="photo2.jpg" alt="Sample Photo">
         <img src="photo3.jpg" alt="Sample Photo">
     </section>
-    
-    <section class="socials">
-        <h2>Follow Me</h2>
-        <a href="https://instagram.com/lensofdelhi" target="_blank">Instagram</a>
-        <a href="https://youtube.com/@lensofdelhi" target="_blank">YouTube</a>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: lensofdelhi@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/lensofdelhi" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/@lensofdelhi" target="_blank">YouTube</a>
+        </div>
     </section>
-    
+
     <footer>
-        <p>Contact: lensofdelhi@gmail.com</p>
+        <p>© 2025 Lens of Delhi. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
